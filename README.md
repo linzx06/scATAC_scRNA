@@ -2,7 +2,7 @@
 The R package will be released soon. Source code for the manuscript "Model-based approach to the joint analysis of single-cell data on chromatin accessibility and gene expression".
 
 # run it on test data
-library(mixtools)
+library(mixtools) 
 
 library(label.switching)
 
