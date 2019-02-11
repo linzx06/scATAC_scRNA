@@ -1,14 +1,11 @@
 # scATAC_scRNA
 The R package will be released soon. Source code for the manuscript "Model-based approach to the joint analysis of single-cell data on chromatin accessibility and gene expression".
 
-## To apply the method on a test data:
-
+# run it on test data
 library(mixtools)
 library(label.switching)
 load("test_data.RData")
 source("gibbs_functions.R")
-
-# run it on test data
 result_test <- getClusterGibbs(data_acc=test_data$data_acc, data_exp=test_data$data_exp, 
                                overlap_seq_acc=test_data$overlap_seq_acc, overlap_seq_exp=test_data$overlap_seq_exp, 
                                nCluster=2, niter=1000)
